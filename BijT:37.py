@@ -349,11 +349,11 @@ def realproj(vi,theta,t,mu,dep,w):
     vy=vi*math.sin(theta*(2*pi)/360)#y velocity in m/s
     vx = vi*math.cos(theta*(2*pi)/360)#x velocity in m/s
     n = 100 #coeffecient of accuracy
-    d= 0
+    d= 0.0
     hl=[0]
-    h=0
-    dvx=0
-    dvy=0
+    h=
+    dvx=0.0
+    dvy=0.0
     for i in range (0,n*t+1):
         dvx = (-mu*vx-dep*w)/n
         vx+=dvx
