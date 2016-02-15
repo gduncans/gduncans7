@@ -351,7 +351,7 @@ def realproj(vi,theta,t,mu,dep,w):
     n = 100 #coeffecient of accuracy
     d= 0.0
     hl=[0]
-    h=
+    h=0.0
     dvx=0.0
     dvy=0.0
     for i in range (0,n*t+1):
