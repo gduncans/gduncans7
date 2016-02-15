@@ -245,16 +245,14 @@ def riemann(l,u):  ###Evaluates the summation function but uses variable n, to d
     return t
 #########################################
 def mid(x,y):
-    return 0.5*x[-1]+0.5*y[-1]
+    return 0.5*x[-1]+0.5*y
 #########################################
-def bisection():
+def bisection(a,b):
     #str = raw_input("Whats the function? (Use x)")  #gets the function as a string
-    a=[]#set of left margins of interval
-    b=[]#set right margins of interval
     c=[]#set of midpoints
     a.append(input("From?"))#asks for interval containging 0
     b.append(input("To?"))
-    m = (a[0]+b[0])/2
+    m = (a+b)/2
     c.append(m)#appends the middle of the interval to the c list
     
     while round(my_function(c[-1]),4) !=0: #(calculate(c[-1],str),4) != 0:
